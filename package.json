@@ -1,0 +1,21 @@
+{
+  "name": "cmexd",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "ie >= 9",
+    "not op_mini all"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "conventional-changelog-cli": "^2.2.2",
+    "lerna": "^4.0.0"
+  }
+}
