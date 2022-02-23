@@ -4,7 +4,10 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -13,9 +16,19 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/svelte": "^6.4.19",
+    "babel-loader": "^8.2.3",
     "conventional-changelog-cli": "^2.2.2",
-    "lerna": "^4.0.0"
-  }
+    "lerna": "^4.0.0",
+    "svelte": "^3.46.4",
+    "svelte-loader": "^3.1.2"
+  },
+  "dependencies": {}
 }
