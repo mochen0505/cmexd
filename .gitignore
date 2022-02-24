@@ -22,7 +22,6 @@ tmp/
 /dist/
 /archive/
 .vscode/
-yarn.lock
 dist.zip
 /dll
 /coverage
