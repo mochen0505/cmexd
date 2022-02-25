@@ -19,7 +19,7 @@ node_modules/
 .sass-cache/
 tmp/
 /build/
-/dist/
+dist/
 /archive/
 .vscode/
 dist.zip
