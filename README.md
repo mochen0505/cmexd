@@ -3,5 +3,5 @@
 Svelte Component Library
 
 For Svelte internal reason, 
-* yarn install
-* cd packages/website and npm install svelte svelte-loader
+* first, yarn install
+* then, cd packages/website and npm install svelte svelte-loader
