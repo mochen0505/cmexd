@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [svelte()],
   build: {
     rollupOptions: {
-      input: resolve(__dirname, './packages/button/src/index.js'),
+      input: resolve(__dirname, './packages/button/index.js'),
       output: {
         dir: resolve(__dirname, './packages/button/dist'),
         format: 'es',
