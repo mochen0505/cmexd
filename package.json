@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "directory": "dist"
+  },
   "scripts": {},
   "browserslist": [
     ">0.2%",
