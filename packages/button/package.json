@@ -6,10 +6,6 @@
   "author": "Mo Chen <mochen0505@hotmail.com>",
   "homepage": "https://github.com/mochen0505/cmexd#readme",
   "license": "MIT",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
   "publishConfig": {
     "access": "public"
   },
