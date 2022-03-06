@@ -6,8 +6,8 @@
   "author": "Mo Chen <mochen0505@hotmail.com>",
   "homepage": "https://github.com/mochen0505/cmexd#readme",
   "license": "MIT",
-  "main": "lib/index.js",
-  "svelte": "lib/index.js",
+  "main": "dist/index.js",
+  "svelte": "dist/index.js",
   "files": [
     "dist",
     "lib"
