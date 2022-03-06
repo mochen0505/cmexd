@@ -7,6 +7,7 @@
   "homepage": "https://github.com/mochen0505/cmexd#readme",
   "license": "MIT",
   "main": "lib/index.js",
+  "svelte": "lib/index.js",
   "files": [
     "dist",
     "lib"
