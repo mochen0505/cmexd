@@ -1,5 +1,5 @@
 import { render } from '@testing-library/svelte';
-import { Button } from "../lib/index";
+import { Button } from "../dist/index";
 
 describe('Button', () => {
   it('props', async () => {
