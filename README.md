@@ -16,3 +16,8 @@ pnpm add <pkg>
 ```shell
 pnpm add <pkg> --filter <pkg_selector>
 ```
+
+## Publish
+```shell
+lerna publish
+```
