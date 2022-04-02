@@ -1,9 +1,6 @@
 {
   "name": "cmexd",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {},
   "browserslist": [
     ">0.2%",
