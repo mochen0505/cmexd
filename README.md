@@ -9,12 +9,12 @@ pnpm install
 
 ## Add Dependencies
 ```shell
-pnpm add <pkg>
+pnpm install <pkg> -w
 ```
 
 ## Add Dependencies for scoped packages
 ```shell
-pnpm add <pkg> --filter <pkg_selector>
+pnpm install <pkg> -r --filter <pkg_selector>
 ```
 
 ## Publish
