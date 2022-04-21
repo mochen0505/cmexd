@@ -1,0 +1,49 @@
+<script>
+    import { onMount } from 'svelte';
+    import { page } from '$app/stores';
+    import Repl from '../../repl';
+    import '../../repl/style/base.css';
+    import '../../repl/style/code.css';
+
+    const { component } = $page.params;
+
+    let repl
+    let comp
+    let Comp
+
+    onMount(async () => {
+        comp = (await import(`../../docs/${component}/${component}.js`)).default;
+        await repl.set({
+            components: [
+                {
+                    name: 'App',
+                    type: 'svelte',
+                    source: comp
+                }
+            ]
+        });
+    })
+
+    onMount(async () => {
+        Comp = (await import(`../../docs/${component}/${component}.md`)).default;
+    })
+</script>
+
+<main>
+    <div class='md-part'>
+        <svelte:component this={Comp}/>
+    </div>
+    <Repl bind:this={repl} orientation="rows" />
+</main>
+
+<style>
+    main {
+        display: flex;
+        height: calc(100vh - 64px);
+    }
+    .md-part {
+        width: 100%;
+        padding: 40px;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+</style>
