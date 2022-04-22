@@ -1,7 +1,10 @@
 {
   "name": "cmexd",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "cd packages/site && svelte-kit dev",
+    "build": "cd packages/site && svelte-kit build"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
