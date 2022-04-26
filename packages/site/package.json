@@ -1,0 +1,40 @@
+{
+  "name": "@cmexd/site",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@smui/drawer": "^6.0.0-beta.15",
+    "@smui/icon-button": "^6.0.0-beta.15",
+    "@smui/list": "^6.0.0-beta.15",
+    "@smui/top-app-bar": "^6.0.0-beta.15",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "marked": "^4.0.12",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.6",
+    "svelte-preprocess": "^4.10.1",
+    "svelte-preprocess-markdown": "^2.7.3",
+    "tslib": "^2.3.1",
+    "typescript": "~4.6.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "acorn": "^8.7.0",
+    "codemirror": "^5.65.2",
+    "cookie": "^0.4.1",
+    "estree-walker": "^3.0.1",
+    "svelte-json-tree": "^0.1.0",
+    "yootils": "^0.3.1"
+  }
+}
