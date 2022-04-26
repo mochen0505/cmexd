@@ -21,3 +21,11 @@ pnpm install <pkg> -r --filter <pkg_selector>
 ```shell
 lerna publish
 ```
+
+## Usage
+```shell
+npm run dev
+cmex sb
+cmex dev
+cmex test
+```
