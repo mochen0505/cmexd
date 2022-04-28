@@ -23,9 +23,25 @@ lerna publish
 ```
 
 ## Usage
+
+### Launch component website
 ```shell
 npm run dev
+```
+
+### run storybook
+```shell
 cmex sb
+```
+
+### build components
+```shell
 cmex build
+cmex build --scope <component>
+```
+
+### run unit test
+```shell
 cmex test
+cmex test --scope <component>
 ```
