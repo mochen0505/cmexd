@@ -26,6 +26,6 @@ lerna publish
 ```shell
 npm run dev
 cmex sb
-cmex dev
+cmex build
 cmex test
 ```
