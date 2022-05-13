@@ -38,10 +38,12 @@ cmex sb
 ```shell
 cmex build
 cmex build --scope <component>
+cmex build -s <component>
 ```
 
 ### run unit test
 ```shell
 cmex test
 cmex test --scope <component>
+cmex test -s <component>
 ```
