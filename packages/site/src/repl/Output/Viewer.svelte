@@ -217,7 +217,7 @@
 		</section>
 	</PaneWithPanel>
 
-	<div class="overlay" style="background: #777b83">
+	<div class="overlay">
 		{#if error}
 			<Message kind="error" details={error} />
 		{:else if status || !$bundle}
