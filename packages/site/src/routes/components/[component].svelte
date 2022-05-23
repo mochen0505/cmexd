@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
-    import Repl from '../../repl';
+    import Repl from '../../../../repl';
     import '../../repl/style/base.css';
     import '../../repl/style/code.css';
 
