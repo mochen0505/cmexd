@@ -6,7 +6,7 @@
 	import Console from './Console.svelte';
 	import Message from '../Message.svelte';
 	import srcdoc from './srcdoc/index.html?raw';
-	import { browser } from '$app/env';
+  import {is_browser} from "../env";
 
 	const { bundle } = getContext('REPL');
 
@@ -201,7 +201,7 @@
 					? 'allow-same-origin'
 					: ''}"
 				class={error || pending || pending_imports ? 'greyed-out' : ''}
-				srcdoc={browser ? srcdoc : ''}
+				srcdoc={is_browser ? srcdoc : ''}
 			/>
 		</div>
 
@@ -217,7 +217,7 @@
 		</section>
 	</PaneWithPanel>
 
-	<div class="overlay">
+	<div class="overlay" style="background: #777b83">
 		{#if error}
 			<Message kind="error" details={error} />
 		{:else if status || !$bundle}
