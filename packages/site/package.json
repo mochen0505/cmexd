@@ -14,6 +14,7 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
+    "@cmexd/repl": "0.0.2",
     "@smui/drawer": "^6.0.0-beta.15",
     "@smui/icon-button": "^6.0.0-beta.15",
     "@smui/list": "^6.0.0-beta.15",
