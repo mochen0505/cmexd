@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "cd packages/site && svelte-kit dev",
-    "build": "cd packages/site && svelte-kit build"
+    "build": "cd packages/site && svelte-kit build",
+    "preview": "cd packages/site && svelte-kit preview"
   },
   "browserslist": [
     ">0.2%",
