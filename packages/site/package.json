@@ -2,7 +2,7 @@
   "name": "@px/site",
   "version": "0.0.2",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.15.0"
   },
   "scripts": {
     "dev": "svelte-kit dev",
