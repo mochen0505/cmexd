@@ -49,7 +49,7 @@
 	}
 
 	.info {
-		background-color: var(--second);
+		background-color: #676778;
 		max-height: 50%;
 		overflow: auto;
 	}

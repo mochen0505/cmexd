@@ -1,5 +1,5 @@
 {
-  "name": "@cmexd/site",
+  "name": "@px/site",
   "version": "0.0.2",
   "engines": {
     "node": ">=16.0.0"
@@ -14,12 +14,8 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@smui/drawer": "^6.0.0-beta.15",
-    "@smui/icon-button": "^6.0.0-beta.15",
-    "@smui/list": "^6.0.0-beta.15",
-    "@smui/top-app-bar": "^6.0.0-beta.15",
-    "@sveltejs/adapter-static": "^1.0.0-next.29",
-    "@sveltejs/kit": "^1.0.0-next.324",
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
     "marked": "^4.0.12",
     "svelte-preprocess": "^4.10.1",
     "svelte-preprocess-markdown": "^2.7.3",

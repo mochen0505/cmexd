@@ -263,5 +263,6 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+    background-color: #676778
 	}
 </style>
