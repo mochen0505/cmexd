@@ -3,6 +3,8 @@
     import { page } from '$app/stores';
     import logo from '../img/logo.png';
     import github from '../img/github.png';
+    import '../repl/style/code.css';
+    import '../repl/style/base.css';
 
     let currentComponent;
 

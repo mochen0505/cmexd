@@ -2,8 +2,6 @@
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
     import Repl from '../../repl';
-    import '../../repl/style/code.css';
-    import '../../repl/style/base.css';
 
     const { component } = $page.params;
 
