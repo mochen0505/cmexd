@@ -1,0 +1,19 @@
+{
+  "name": "@cmexd/example",
+  "version": "0.0.2",
+  "engines": {
+    "node": ">=16.15.0"
+  },
+  "scripts": {
+    "dev": "svelte-kit dev"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "svelte-preprocess": "^4.10.1",
+    "tslib": "^2.3.1",
+    "typescript": "~4.6.2"
+  },
+  "type": "module",
+  "dependencies": {}
+}

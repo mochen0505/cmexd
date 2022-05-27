@@ -2,6 +2,7 @@
   "name": "cmexd",
   "private": true,
   "scripts": {
+    "exp": "cd packages/example && svelte-kit dev",
     "dev": "cd packages/site && svelte-kit dev",
     "build": "cd packages/site && svelte-kit build",
     "preview": "cd packages/site && svelte-kit preview"
