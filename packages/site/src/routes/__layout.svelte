@@ -54,6 +54,10 @@
     min-width: 180px;
   }
 
+  .asset-ul {
+    margin: 0;
+    padding: 0;
+  }
   .asset-ul > li {
     padding: 12px 28px;
   }

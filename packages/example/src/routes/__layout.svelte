@@ -54,6 +54,10 @@
     min-width: 180px;
   }
 
+  .asset-ul {
+    margin: 0;
+    padding: 0;
+  }
   .asset-ul > li {
     padding: 12px 28px;
   }
@@ -83,6 +87,14 @@
   .content-right {
     flex: 1;
   }
+  main {
+    display: flex;
+    height: calc(100vh - 64px);
+  }
+  .main-content {
+    width: 100%;
+    padding: 40px;
+  }
 </style>
 
 <div class="app-top-bar">
@@ -102,7 +114,9 @@
   </div>
   <div class="content-right">
     <main>
-      <slot/>
+      <div class="main-content">
+        <slot/>
+      </div>
     </main>
   </div>
 </div>
