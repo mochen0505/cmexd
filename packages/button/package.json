@@ -18,6 +18,9 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
+  "dependencies": {
+    "@cmexd/icon": "0.0.4"
+  },
   "devDependencies": {
     "typescript": "^4.6.3"
   }

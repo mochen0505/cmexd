@@ -40,7 +40,10 @@ importers:
 
   packages/button:
     specifiers:
+      '@cmexd/icon': 0.0.4
       typescript: ^4.6.3
+    dependencies:
+      '@cmexd/icon': link:../icon
     devDependencies:
       typescript: 4.7.2
 
@@ -57,6 +60,12 @@ importers:
       svelte-preprocess: 4.10.6_typescript@4.6.4
       tslib: 2.4.0
       typescript: 4.6.4
+
+  packages/icon:
+    specifiers:
+      typescript: ^4.6.3
+    devDependencies:
+      typescript: 4.7.2
 
   packages/site:
     specifiers:
@@ -5048,7 +5057,7 @@ packages:
     dev: true
 
   /is-extglob/2.1.1:
-    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=}
+    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
     dev: true
 
