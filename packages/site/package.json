@@ -1,5 +1,6 @@
 {
   "name": "@cmexd/site",
+  "private": true,
   "version": "0.0.3",
   "engines": {
     "node": ">=16.15.0"
