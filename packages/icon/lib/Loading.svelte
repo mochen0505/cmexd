@@ -2,7 +2,27 @@
   export let color = '#fff';
 </script>
 
-<svg width="24" height="24">
+<style>
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-animation: loading-circle 1s infinite linear;
+    animation: loading-circle 1s infinite linear;
+    transform: scale(1);
+    transition: transform 3s linear;
+  }
+
+  @keyframes loading-circle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+<svg width="16" height="16" viewBox="4 4 16 16">
   <g fill={color} fill-rule="nonzero">
     <path d="M11.992 4c.304 0 .504.2.504.503v2.102c0 .304-.2.504-.504.504s-.503-.2-.503-.504V4.503c.008-.303.207-.503.503-.503z" />
     <path d="M11.992 16.891c.304 0 .504.2.504.504v2.102c0 .303-.2.503-.504.503s-.503-.2-.503-.503v-2.102c.008-.304.207-.504.503-.504z" opacity=".5" />

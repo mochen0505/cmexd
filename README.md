@@ -24,14 +24,14 @@ lerna publish
 
 ## Usage
 
+### Show component examples in develop mode
+```shell
+npm run exp
+```
+
 ### Launch component website
 ```shell
 npm run dev
-```
-
-### run storybook
-```shell
-cmex sb
 ```
 
 ### build components
