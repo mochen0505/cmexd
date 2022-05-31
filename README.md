@@ -24,9 +24,9 @@ lerna publish
 
 ## Usage
 
-### Show component examples in develop mode
+### Launch playground
 ```shell
-npm run exp
+npm run pg
 ```
 
 ### Launch component website
