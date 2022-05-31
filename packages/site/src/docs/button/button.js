@@ -7,8 +7,6 @@ const button = `
   class="demo-button"
   type="primary"
   on:click={() => {console.log(123)}}
-  loading={true}
-  disabled={false}
 >
   Button
 </Button>
