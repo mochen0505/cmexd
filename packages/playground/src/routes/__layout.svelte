@@ -106,6 +106,9 @@
   <div class="content-left">
     <nav>
       <ul class="asset-ul ml4">
+        <li class:active={currentComponent === 'icon'} on:click={() => handleRedirect('icon')}>
+          <div class="item">Icon</div>
+        </li>
         <li class:active={currentComponent === 'button'} on:click={() => handleRedirect('button')}>
           <div class="item">Button</div>
         </li>

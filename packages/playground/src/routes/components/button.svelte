@@ -2,9 +2,6 @@
   import { Button } from '@cmexd/button';
 </script>
 
-<style>
-</style>
-
 <Button
   class="demo-button"
   type="text"
