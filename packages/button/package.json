@@ -1,6 +1,6 @@
 {
   "name": "@cmexd/button",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "type": "module",
   "description": "",
   "author": "Mo Chen <mochen0505@hotmail.com>",
@@ -19,7 +19,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@cmexd/icon": "^0.0.5"
+    "@cmexd/icon": "^0.0.6"
   },
   "devDependencies": {
     "typescript": "^4.6.3"
