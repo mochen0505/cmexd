@@ -1,30 +1,29 @@
 <script>
-    import { onMount } from 'svelte';
     import { page } from '$app/stores';
     import Repl from '../../repl';
-
-    const { component } = $page.params;
 
     let repl
     let comp
     let Comp
 
-    onMount(async () => {
-        comp = (await import(`../../docs/${component}/${component}.js`)).default;
-        await repl.set({
-            components: [
-                {
-                    name: 'App',
-                    type: 'svelte',
-                    source: comp
-                }
-            ]
-        });
-    })
+    $: upDateComponent($page.params)
 
-    onMount(async () => {
+    async function upDateComponent(params) {
+      if (params.component) {
+        const component = params.component
+        comp = (await import(`../../docs/${component}/${component}.js`)).default;
         Comp = (await import(`../../docs/${component}/${component}.md`)).default;
-    })
+        await repl.set({
+          components: [
+            {
+              name: 'App',
+              type: 'svelte',
+              source: comp
+            }
+          ]
+        });
+      }
+    }
 </script>
 
 <main>
