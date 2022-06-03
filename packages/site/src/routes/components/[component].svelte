@@ -6,9 +6,9 @@
     let comp
     let Comp
 
-    $: upDateComponent($page.params)
+    $: updateComponent($page.params)
 
-    async function upDateComponent(params) {
+    async function updateComponent(params) {
       if (params.component) {
         const component = params.component
         comp = (await import(`../../docs/${component}/${component}.js`)).default;
