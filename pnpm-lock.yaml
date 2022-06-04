@@ -72,7 +72,7 @@ importers:
 
   packages/site:
     specifiers:
-      '@cmexd/style': 0.0.2
+      '@cmexd/style': 0.0.3
       '@sveltejs/adapter-static': next
       '@sveltejs/kit': next
       acorn: ^8.7.0
