@@ -22,6 +22,15 @@
 <Button
   class="demo-button"
   type="primary"
+  mode="night"
+  on:click={() => {console.log(123)}}
+>
+  Button
+</Button>
+
+<Button
+  class="demo-button"
+  type="primary"
   on:click={() => {console.log(123)}}
 >
   Button

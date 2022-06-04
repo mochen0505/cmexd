@@ -6,13 +6,15 @@
   export {className as class};
   export let type = 'primary'; // primary/default/ghost/text
   export let size = 'medium'; // large/medium/small
+  export let mode = 'day'; // day/night
   export let loading = false;
   export let disabled = false;
 
   const classes = classNames(
     className,
     {
-      [`${type}`]: type,
+      [`${type}`]: type && mode !== 'night',
+      [`${type}-${mode}`]: mode === 'night',
       [`${size}`]: size,
       loading: loading && !disabled,
     }
@@ -34,8 +36,14 @@
   }
 
   .primary {
-    border-color: #003fe6;
-    background: #003fe6;
+    border-color: var(--blue-main-day);
+    background: var(--blue-main-day);
+    color: #fff;
+  }
+
+  .primary-night {
+    border-color: var(--blue-main-night);
+    background: var(--blue-main-night);
     color: #fff;
   }
 
