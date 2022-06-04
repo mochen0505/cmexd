@@ -1,6 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { Loading } from '@cmexd/icon';
+  import '@cmexd/style';
 
   let className = '';
   export {className as class};
