@@ -1,6 +1,6 @@
 {
   "name": "@cmexd/button",
-  "version": "1.9.8",
+  "version": "1.9.9",
   "type": "module",
   "description": "",
   "author": "Mo Chen <mochen0505@hotmail.com>",
@@ -19,7 +19,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@cmexd/icon": "^0.0.6",
+    "@cmexd/icon": "^0.0.7",
     "classnames": "^2.3.1"
   },
   "devDependencies": {
