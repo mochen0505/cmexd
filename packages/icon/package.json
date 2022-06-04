@@ -20,5 +20,8 @@
   },
   "devDependencies": {
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   }
 }
