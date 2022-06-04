@@ -6,10 +6,11 @@
   "author": "Mo Chen <mochen0505@hotmail.com>",
   "homepage": "https://github.com/mochen0505/cmexd#readme",
   "license": "MIT",
-  "module": "dist/style.css",
-  "svelte": "style.css",
+  "module": "dist/index.js",
+  "svelte": "lib/index.ts",
   "files": [
-    "dist/style.css"
+    "dist",
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
