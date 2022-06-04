@@ -43,26 +43,12 @@ importers:
 
   packages/button:
     specifiers:
-      '@cmexd/icon': 0.0.4
+      '@cmexd/icon': ^0.0.6
       typescript: ^4.6.3
     dependencies:
       '@cmexd/icon': link:../icon
     devDependencies:
       typescript: 4.7.2
-
-  packages/example:
-    specifiers:
-      '@sveltejs/adapter-static': next
-      '@sveltejs/kit': next
-      svelte-preprocess: ^4.10.1
-      tslib: ^2.3.1
-      typescript: ~4.6.2
-    devDependencies:
-      '@sveltejs/adapter-static': 1.0.0-next.32
-      '@sveltejs/kit': 1.0.0-next.345
-      svelte-preprocess: 4.10.6_typescript@4.6.4
-      tslib: 2.4.0
-      typescript: 4.6.4
 
   packages/icon:
     specifiers:
@@ -70,8 +56,23 @@ importers:
     devDependencies:
       typescript: 4.7.2
 
+  packages/playground:
+    specifiers:
+      '@sveltejs/adapter-static': next
+      '@sveltejs/kit': next
+      svelte-preprocess: ^4.10.1
+      tslib: ^2.3.1
+      typescript: ~4.6.2
+    devDependencies:
+      '@sveltejs/adapter-static': 1.0.0-next.34
+      '@sveltejs/kit': 1.0.0-next.348
+      svelte-preprocess: 4.10.6_typescript@4.6.4
+      tslib: 2.4.0
+      typescript: 4.6.4
+
   packages/site:
     specifiers:
+      '@cmexd/style': 0.0.2
       '@sveltejs/adapter-static': next
       '@sveltejs/kit': next
       acorn: ^8.7.0
@@ -86,6 +87,7 @@ importers:
       typescript: ~4.6.2
       yootils: ^0.3.1
     dependencies:
+      '@cmexd/style': link:../style
       acorn: 8.7.1
       codemirror: 5.65.4
       cookie: 0.4.2
@@ -93,13 +95,16 @@ importers:
       svelte-json-tree: 0.1.0
       yootils: 0.3.1
     devDependencies:
-      '@sveltejs/adapter-static': 1.0.0-next.32
-      '@sveltejs/kit': 1.0.0-next.345
+      '@sveltejs/adapter-static': 1.0.0-next.34
+      '@sveltejs/kit': 1.0.0-next.348
       marked: 4.0.16
       svelte-preprocess: 4.10.6_typescript@4.6.4
       svelte-preprocess-markdown: 2.7.3
       tslib: 2.4.0
       typescript: 4.6.4
+
+  packages/style:
+    specifiers: {}
 
 packages:
 
@@ -2635,20 +2640,20 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
-  /@sveltejs/adapter-static/1.0.0-next.32:
-    resolution: {integrity: sha512-kpYlghqxVWbrIdbzoiQTe1kSq9/+xlAkcd8eXTAGGPCBPYTUa0bkxt1NEfoNC+h7a+KlFoLMTi9W0AxnrNuiIQ==}
+  /@sveltejs/adapter-static/1.0.0-next.34:
+    resolution: {integrity: sha512-XjuMhemme5z0L/B2nTZpA6k+RJjF+b6L96ts6gIQ6ixiCzJQSbBqJhrrBYBCaeLAKvdUMoGEmX8m862JhKjRFg==}
     dependencies:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.345:
-    resolution: {integrity: sha512-2nLZoXZ02uXMSxqRAMRCr/J4aCphqgKLxEhRRyh3c3aWLAjWiDWLDcvSB770eHt3y0MkYrTvp7JrDF7RhfyuBA==}
+  /@sveltejs/kit/1.0.0-next.348:
+    resolution: {integrity: sha512-K9dfgzIbotWmbcdCsQ6ROGs9R+bsGWwmSdN6l6km1QV5esQehqg1UYHGD9q0VJsg4rJg/zmKVBYo0oBquSHPZw==}
     engines: {node: '>=16.7'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.45_vite@2.9.9
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.47_vite@2.9.9
       chokidar: 3.5.3
       sade: 1.8.1
       vite: 2.9.9
@@ -2660,8 +2665,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.45_vite@2.9.9:
-    resolution: {integrity: sha512-WLschM2qpa4lSpKR4zTVDJ2AW48u3Gjs3BX5s6aZvLRC3bjBjKcOcGmOG9pLu07C869wdMwZFZ+GroVcx7ZKpw==}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.47_vite@2.9.9:
+    resolution: {integrity: sha512-J6n8UN51aq/TEZGQ89/EtdXTtca3cRcTJGzi6fi+xK8LkgsHQLCZhRj+PJ+swktRSWTX9IOmQS55SqVg6bz5fA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
@@ -2676,7 +2681,7 @@ packages:
       deepmerge: 4.2.2
       kleur: 4.1.4
       magic-string: 0.26.2
-      svelte-hmr: 0.14.11
+      svelte-hmr: 0.14.12
       vite: 2.9.9
     transitivePeerDependencies:
       - supports-color
@@ -7768,13 +7773,6 @@ packages:
     resolution: {integrity: sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=}
     dev: true
 
-  /svelte-hmr/0.14.11:
-    resolution: {integrity: sha512-R9CVfX6DXxW1Kn45Jtmx+yUe+sPhrbYSUp7TkzbW0jI5fVPn6lsNG9NEs5dFg5qRhFNAoVdRw5qQDLALNKhwbQ==}
-    engines: {node: ^12.20 || ^14.13.1 || >= 16}
-    peerDependencies:
-      svelte: '>=3.19.0'
-    dev: true
-
   /svelte-hmr/0.14.11_svelte@3.48.0:
     resolution: {integrity: sha512-R9CVfX6DXxW1Kn45Jtmx+yUe+sPhrbYSUp7TkzbW0jI5fVPn6lsNG9NEs5dFg5qRhFNAoVdRw5qQDLALNKhwbQ==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -7782,6 +7780,13 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.48.0
+    dev: true
+
+  /svelte-hmr/0.14.12:
+    resolution: {integrity: sha512-4QSW/VvXuqVcFZ+RhxiR8/newmwOCTlbYIezvkeN6302YFRE8cXy0naamHcjz8Y9Ce3ITTZtrHrIL0AGfyo61w==}
+    engines: {node: ^12.20 || ^14.13.1 || >= 16}
+    peerDependencies:
+      svelte: '>=3.19.0'
     dev: true
 
   /svelte-jester/2.3.2_jest@27.5.1+svelte@3.48.0:

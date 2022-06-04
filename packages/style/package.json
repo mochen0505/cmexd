@@ -9,7 +9,7 @@
   "module": "dist/style.css",
   "svelte": "style.css",
   "files": [
-    "dist"
+    "dist/style.css"
   ],
   "publishConfig": {
     "access": "public"

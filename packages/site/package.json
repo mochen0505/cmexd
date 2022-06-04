@@ -25,6 +25,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@cmexd/style": "0.0.3",
     "acorn": "^8.7.0",
     "codemirror": "^5.65.2",
     "cookie": "^0.4.1",
