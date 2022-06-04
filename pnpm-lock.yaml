@@ -40,7 +40,7 @@ importers:
 
   packages/button:
     specifiers:
-      '@cmexd/icon': ^0.0.6
+      '@cmexd/icon': ^0.0.7
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
