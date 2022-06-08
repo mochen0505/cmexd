@@ -1,9 +1,13 @@
 <script>
-  import './iconfont/iconfont'
+  import {onMount} from 'svelte'
 
   let className = '';
   export {className as class};
   export let type
+
+  onMount(() => {
+    import('./iconfont/iconfont').then(icon => {})
+  })
 </script>
 
 <style>
