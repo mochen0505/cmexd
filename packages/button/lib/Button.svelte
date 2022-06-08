@@ -1,7 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { Loading } from '@cmexd/icon';
-  import './style.css'
+  import Style from "./Style.svelte";
 
   let className = '';
   export {className as class};
