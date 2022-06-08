@@ -1,7 +1,6 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { Loading } from '@cmexd/icon';
-  import './style.css'
 
   let className = '';
   export {className as class};
@@ -37,14 +36,14 @@
   }
 
   .primary {
-    border-color: var(--blue-main-day);
-    background: var(--blue-main-day);
+    border-color: #003fe6;
+    background: #003fe6;
     color: #fff;
   }
 
   .primary-night {
-    border-color: var(--blue-main-night);
-    background: var(--blue-main-night);
+    border-color: #3d7eff;
+    background: #3d7eff;
     color: #fff;
   }
 
