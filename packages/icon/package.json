@@ -9,8 +9,7 @@
   "module": "dist/index.js",
   "svelte": "lib/index.ts",
   "files": [
-    "dist",
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
