@@ -36,14 +36,14 @@
   }
 
   .primary {
-    border-color: #003fe6;
-    background: #003fe6;
+    border-color: var(--blue-main-day);
+    background: var(--blue-main-day);
     color: #fff;
   }
 
   .primary-night {
-    border-color: #3d7eff;
-    background: #3d7eff;
+    border-color: var(--blue-main-night);
+    background: var(--blue-main-night);
     color: #fff;
   }
 
