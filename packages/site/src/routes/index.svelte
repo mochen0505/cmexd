@@ -1,4 +1,5 @@
 <script>
+  import doc from './index.md';
 </script>
 
 <style>
@@ -11,5 +12,8 @@
 </style>
 
 <div class="content-wrap">
-  <div class="title">Svelte Component Library</div>
+  <div class="title">
+    Svelte Component Library
+  </div>
+  <svelte:component this={doc}/>
 </div>
