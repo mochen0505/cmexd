@@ -1,7 +1,7 @@
 <script>
     import { goto } from '$app/navigation';
     import { page } from '$app/stores';
-    import '@cmexd/style'
+    import '@cmexd/style';
     import logo from '../img/logo.png';
     import github from '../img/github.png';
     import '../style/code.css';
