@@ -48,12 +48,13 @@
   }
 
   .primary:hover {
-    border-color: #3365ff;
-    background: #3365ff;
+    border-color: var(--blue-hover-day);
+    background: var(--blue-hover-day);
   }
 
   .primary:active {
-    background: #0023d1;
+    border-color: var(--blue-click-day);
+    background: var(--blue-click-day);
   }
 
   .primary:disabled {
