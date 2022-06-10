@@ -4,9 +4,21 @@
 
   let className = '';
   export {className as class};
-  export let type: 'primary' | 'reverse' | 'default' | 'text' = 'primary';
-  export let size: 'large' | 'medium' | 'small' = 'medium';
-  export let mode: 'day' | 'night' = 'day';
+  /**
+   * Button type
+   * @type {"primary" | "reverse" | "default" | "text"}
+   */
+  export let type = 'primary';
+  /**
+   * Button size
+   * @type {"large" | "medium" | "small"}
+   */
+  export let size = 'medium';
+  /**
+   * Button mode
+   * @type {"day" | "night"}
+   */
+  export let mode = 'day';
   export let loading = false;
   export let disabled = false;
 
