@@ -18,7 +18,10 @@
             {
               name: 'App',
               type: 'svelte',
-              source: comp
+              source:
+                '<svelte:head>\n' +
+                '\t<link rel="stylesheet" href="https://unpkg.com/@cmexd/style@0.1.0/dist/index.css" />\n' +
+                '</svelte:head>' + comp
             }
           ]
         });

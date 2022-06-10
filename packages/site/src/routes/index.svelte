@@ -1,7 +1,3 @@
-<script>
-  import doc from './index.md';
-</script>
-
 <style>
   .content-wrap {
     padding: 12px 20px;
@@ -15,5 +11,4 @@
   <div class="title">
     Svelte Component Library
   </div>
-  <svelte:component this={doc}/>
 </div>
