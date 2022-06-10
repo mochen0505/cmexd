@@ -4,9 +4,9 @@
 
   let className = '';
   export {className as class};
-  export let type = 'primary'; // primary/default/reverse/text
-  export let size = 'medium'; // large/medium/small
-  export let mode = 'day'; // day/night
+  export let type: 'primary' | 'reverse' | 'default' | 'text' = 'primary';
+  export let size: 'large' | 'medium' | 'small' = 'medium';
+  export let mode: 'day' | 'night' = 'day';
   export let loading = false;
   export let disabled = false;
 
