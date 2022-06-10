@@ -12,7 +12,7 @@
 
 <Button
   class="demo-button"
-  type="ghost"
+  type="reverse"
   on:click={() => {console.log(123)}}
   disabled={false}
 >
