@@ -1,13 +1,19 @@
 <script>
-  import {onMount} from 'svelte'
+  import {onMount, createEventDispatcher} from 'svelte'
 
   let className = '';
   export {className as class};
   export let type
 
+  const dispatch = createEventDispatcher();
+
   onMount(() => {
     import('./iconfont/iconfont').then(icon => {})
   })
+
+  function handleIconClick() {
+    dispatch('click')
+  }
 </script>
 
 <style>
@@ -17,6 +23,6 @@
   }
 </style>
 
-<svg class="{className} icon" aria-hidden="true">
+<svg class={`icon ${className}`} aria-hidden="true" on:click={handleIconClick}>
   <use xlink:href={`#${type}`}></use>
 </svg>

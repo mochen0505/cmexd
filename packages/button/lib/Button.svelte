@@ -22,7 +22,8 @@
   export let loading = false;
   export let disabled = false;
 
-  const classes = classNames(
+  let classes;
+  $: classes = classNames(
     className,
     {
       [`${type}`]: type && mode !== 'night',
@@ -31,6 +32,7 @@
       loading: loading && !disabled,
     }
   )
+
 </script>
 
 <style>

@@ -1,0 +1,28 @@
+{
+  "name": "@cmexd/modal",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "author": "Mo Chen <mochen0505@hotmail.com>",
+  "homepage": "https://github.com/mochen0505/cmexd#readme",
+  "license": "MIT",
+  "module": "dist/index.js",
+  "svelte": "lib/index.ts",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@cmexd/icon": "^1.2.0",
+    "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
