@@ -1,7 +1,7 @@
 <script>
   import { tick, onMount, onDestroy, createEventDispatcher } from "svelte";
   import { fade, fly } from "svelte/transition";
-  import classNames from 'classnames';
+  import classNames from "classnames";
   import { IconFont } from "@cmexd/icon";
 
   let className = '';

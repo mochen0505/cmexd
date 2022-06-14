@@ -49,6 +49,17 @@ importers:
     devDependencies:
       typescript: 4.7.3
 
+  packages/drawer:
+    specifiers:
+      '@cmexd/icon': ^1.3.0
+      classnames: ^2.3.1
+      typescript: ^4.6.3
+    dependencies:
+      '@cmexd/icon': link:../icon
+      classnames: 2.3.1
+    devDependencies:
+      typescript: 4.7.3
+
   packages/icon:
     specifiers:
       classnames: ^2.3.1
