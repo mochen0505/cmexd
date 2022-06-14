@@ -16,5 +16,5 @@
 | visible | 显隐 | boolean | false |
 | width | 宽度 | number | 500 |
 | direction | 弹出方向 | right/left | right |
-| closeByEsc | 按esc关闭modal | boolean | true |
+| closeByEsc | 按esc关闭drawer | boolean | true |
 | beforeClose | 关闭抽屉之前的回调 | function | () => true |
