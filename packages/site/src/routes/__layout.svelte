@@ -6,6 +6,10 @@
     import '../repl/style/code.css';
     import '../repl/style/base.css';
 
+    const menu = [
+      'icon', 'button', 'modal', 'drawer'
+    ];
+
     let currentComponent;
 
     $: currentComponent = $page.params.component;
@@ -20,6 +24,10 @@
 
     function handleRedirectToHome() {
       goto('/')
+    }
+
+    function getMenuName(name) {
+      return name.slice(0, 1).toUpperCase() + name.slice(1)
     }
 </script>
 
@@ -98,18 +106,11 @@
   <div class="content-left">
     <nav>
       <ul class="asset-ul ml4">
-        <li class:active={currentComponent === 'icon'} on:click={() => handleRedirect('icon')}>
-          <a>Icon</a>
-        </li>
-        <li class:active={currentComponent === 'button'} on:click={() => handleRedirect('button')}>
-          <a>Button</a>
-        </li>
-        <li class:active={currentComponent === 'modal'} on:click={() => handleRedirect('modal')}>
-          <a>Modal</a>
-        </li>
-        <li class:active={currentComponent === 'drawer'} on:click={() => handleRedirect('drawer')}>
-          <a>Drawer</a>
-        </li>
+        {#each menu as item}
+          <li class:active={currentComponent === item} on:click={() => handleRedirect(item)}>
+            <a>{getMenuName(item)}</a>
+          </li>
+        {/each}
       </ul>
     </nav>
   </div>
