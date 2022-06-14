@@ -116,6 +116,9 @@
         <li class:active={currentComponent === 'modal'} on:click={() => handleRedirect('modal')}>
           <div class="item">Modal</div>
         </li>
+        <li class:active={currentComponent === 'drawer'} on:click={() => handleRedirect('drawer')}>
+          <div class="item">Drawer</div>
+        </li>
       </ul>
     </nav>
   </div>

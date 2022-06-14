@@ -1,13 +1,18 @@
 <script>
   import { tick, onMount, onDestroy, createEventDispatcher } from "svelte";
-  import { fade, scale } from "svelte/transition";
-  import { quintOut } from "svelte/easing";
+  import { fade, fly } from "svelte/transition";
+  import classNames from 'classnames';
   import { IconFont } from "@cmexd/icon";
 
   let className = '';
   export {className as class};
   export let visible = false;
-  export let width = 620;
+  export let width = 500;
+  /**
+   * Drawer direction
+   * @type {"right" | "left"}
+   */
+  export let direction = 'right';
   export let closeByEsc = true;
   export let beforeClose = () => true;
 
@@ -16,6 +21,15 @@
   let attrs = {};
   let mounted = false;
   let elm;
+  let classes;
+
+  $: classes = classNames(
+    'drawer',
+    className,
+    {
+      [`${direction}`]: direction,
+    }
+  )
 
   $: {
     const { visible, width, closeByEsc, beforeClose, ...other } = $$props;
@@ -95,36 +109,34 @@
 </script>
 
 <style>
-  .modal-mask {
+  .drawer-mask {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     z-index: 30;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in;
   }
-  .modal {
-    position: relative;
+  .drawer {
+    position: fixed;
     z-index: 40;
-    max-height: calc(100vh - 3em);
-    border-radius: 12px;
+    height: 100%;
     background: #fff;
     overflow: auto;
+    transition: all 0.3s ease-in;
   }
-  .modal:focus {
+  .drawer:focus {
     outline: none;
   }
-  .modal::-moz-focus-inner {
+  .drawer::-moz-focus-inner {
     border: 0;
   }
-  .modal:-moz-focusring {
+  .drawer:-moz-focusring {
     outline: none;
   }
-  .modal :global(.close-icon) {
+  .drawer :global(.close-icon) {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -133,8 +145,14 @@
     fill: #9fa3ab;
     cursor: pointer;
   }
-  .modal-content {
+  .drawer-content {
     padding: 24px
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
   }
 </style>
 
@@ -142,19 +160,19 @@
 
 {#if visible}
   <div
-    transition:fade={{ duration: 100 }}
-    class="modal-mask"
+    transition:fade={{ duration: 300 }}
+    class="drawer-mask"
   >
     <div
-      in:scale={{ duration: 100, easing: quintOut }}
-      class={`modal ${className}`}
+      transition:fly={{x: direction === 'right' ? width : -width, duration: 500}}
+      class={classes}
       style={`width: ${width}px`}
       tabindex="-1"
       bind:this={elm}
       {...attrs}
     >
       <IconFont class="close-icon" type="icon-close" on:click={handleModalClose}/>
-      <div class="modal-content">
+      <div class="drawer-content">
         <slot />
       </div>
     </div>
