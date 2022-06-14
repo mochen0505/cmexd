@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { tick, onMount, onDestroy, createEventDispatcher } from "svelte";
   import { fade, scale } from "svelte/transition";
   import { quintOut } from "svelte/easing";
@@ -67,7 +67,7 @@
   }
 
   function handleModalClose() {
-    dispatch("close");
+    close(null);
   }
 
   function enableScroll(enable) {

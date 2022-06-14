@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import {onMount, createEventDispatcher} from 'svelte'
 
   let className = '';

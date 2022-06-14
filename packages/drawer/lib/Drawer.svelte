@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { tick, onMount, onDestroy, createEventDispatcher } from "svelte";
   import { fade, fly } from "svelte/transition";
   import classNames from "classnames";
@@ -81,7 +81,7 @@
   }
 
   function handleModalClose() {
-    dispatch("close");
+    close(null);
   }
 
   function enableScroll(enable) {
