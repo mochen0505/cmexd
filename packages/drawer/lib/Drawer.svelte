@@ -18,7 +18,6 @@
 
   const dispatch = createEventDispatcher();
 
-  let attrs = {};
   let mounted = false;
   let elm;
   let classes;
@@ -31,10 +30,6 @@
     }
   )
 
-  $: {
-    const { visible, width, closeByEsc, beforeClose, ...other } = $$props;
-    attrs = other;
-  }
   $: if (visible) {
     mounted && enableScroll(false);
     onVisible();
@@ -169,7 +164,7 @@
       style={`width: ${width}px`}
       tabindex="-1"
       bind:this={elm}
-      {...attrs}
+      {...$$restProps}
     >
       <IconFont class="close-icon" type="icon-close" on:click={handleModalClose}/>
       <div class="drawer-content">

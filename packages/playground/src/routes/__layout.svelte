@@ -8,7 +8,7 @@
     import '../style/base.css';
 
     const menu = [
-      'icon', 'button', 'modal', 'drawer'
+      'icon', 'button', 'modal', 'drawer', 'tabs'
     ];
 
     let currentComponent;
