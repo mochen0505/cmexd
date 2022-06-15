@@ -9,10 +9,7 @@ const tabs = `
 </script>
 
 <Tabs class="my-tabs" on:change={handleTabChange}>
-  <TabPane tabId="1" active>
-    <span slot="tab">
-      tab slot
-    </span>
+  <TabPane tabId="1" tab="tab1" active>
     content 1
   </TabPane>
   <TabPane tabId="2" tab="tab2">
