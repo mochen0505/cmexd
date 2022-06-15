@@ -1,12 +1,18 @@
 <script>
   import { setContext } from 'svelte';
 
-  let className = '';
-  export {className as class};
-
   setContext('tabs', true);
 </script>
 
-<ul class={className}>
+<style>
+  .tab-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<ul class="tab-header">
   <slot />
 </ul>

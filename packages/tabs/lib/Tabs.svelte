@@ -7,9 +7,11 @@
 
   let className = '';
   export {className as class};
+  export let gutter = 30;
 
   const activeTabId = writable();
   setContext('tabContent', {
+    gutter,
     activeTabId,
     setActiveTab: (tabId) => {
       activeTabId.set(tabId);
@@ -19,7 +21,7 @@
 
 </script>
 
-<div {...$$restProps} class={className}>
+<div class={className}>
   <TabHeader>
     <slot/>
   </TabHeader>
