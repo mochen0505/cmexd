@@ -104,7 +104,12 @@
   }
 </style>
 
-<span class={classes} on:mousedown={(e) => e.stopPropagation()} on:click={() => dispatch('change')}>
+<span
+  class={classes}
+  {...$$restProps}
+  on:mousedown={(e) => e.stopPropagation()}
+  on:click={() => dispatch('change')}
+>
   <span class="wrap">
     <span class="inner"></span>
     <span class="circle"></span>

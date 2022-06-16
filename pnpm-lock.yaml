@@ -40,7 +40,7 @@ importers:
 
   packages/button:
     specifiers:
-      '@cmexd/icon': ^1.3.0
+      '@cmexd/icon': ^1.4.0
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
@@ -51,7 +51,7 @@ importers:
 
   packages/drawer:
     specifiers:
-      '@cmexd/icon': ^1.3.0
+      '@cmexd/icon': ^1.4.0
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
@@ -71,7 +71,7 @@ importers:
 
   packages/modal:
     specifiers:
-      '@cmexd/icon': ^1.3.0
+      '@cmexd/icon': ^1.4.0
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
@@ -131,11 +131,31 @@ importers:
     devDependencies:
       typescript: 4.7.3
 
+  packages/switch:
+    specifiers:
+      classnames: ^2.3.1
+      typescript: ^4.6.3
+    dependencies:
+      classnames: 2.3.1
+    devDependencies:
+      typescript: 4.7.3
+
   packages/tabs:
     specifiers:
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
+      classnames: 2.3.1
+    devDependencies:
+      typescript: 4.7.3
+
+  packages/tooltip:
+    specifiers:
+      '@popperjs/core': ^2.11.5
+      classnames: ^2.3.1
+      typescript: ^4.6.3
+    dependencies:
+      '@popperjs/core': 2.11.5
       classnames: 2.3.1
     devDependencies:
       typescript: 4.7.3
@@ -2653,6 +2673,10 @@ packages:
     dependencies:
       '@octokit/openapi-types': 11.2.0
     dev: true
+
+  /@popperjs/core/2.11.5:
+    resolution: {integrity: sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==}
+    dev: false
 
   /@rollup/pluginutils/4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}

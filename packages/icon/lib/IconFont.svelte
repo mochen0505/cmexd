@@ -23,6 +23,11 @@
   }
 </style>
 
-<svg class={`icon ${className}`} aria-hidden="true" on:click={handleIconClick}>
+<svg
+  class={`icon ${className}`}
+  aria-hidden="true"
+  {...$$restProps}
+  on:click={handleIconClick}
+>
   <use xlink:href={`#${type}`}></use>
 </svg>

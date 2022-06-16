@@ -213,6 +213,7 @@
 <button
   {disabled}
   class="{classes}"
+  {...$$restProps}
   on:click
 >
   {#if loading}

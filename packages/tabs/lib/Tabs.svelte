@@ -21,7 +21,7 @@
 
 </script>
 
-<div class={className}>
+<div class={className} {...$$restProps}>
   <TabHeader>
     <slot/>
   </TabHeader>
