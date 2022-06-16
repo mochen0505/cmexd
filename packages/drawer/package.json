@@ -1,6 +1,6 @@
 {
   "name": "@cmexd/drawer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "description": "",
   "author": "Mo Chen <mochen0505@hotmail.com>",
@@ -19,7 +19,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@cmexd/icon": "^1.4.0",
+    "@cmexd/icon": "^1.5.0",
     "classnames": "^2.3.1"
   },
   "devDependencies": {
