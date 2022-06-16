@@ -34,7 +34,7 @@
     display: inline-block;
     width: 42px;
   }
-  label {
+  .wrap {
     display: block;
     border: 1px solid #e5e5e5;
     border-radius: 10px;
@@ -105,8 +105,8 @@
 </style>
 
 <span class={classes} on:mousedown={(e) => e.stopPropagation()} on:click={() => dispatch('change')}>
-  <label>
-    <span class="inner" />
-    <span class="circle" />
-  </label>
+  <span class="wrap">
+    <span class="inner"></span>
+    <span class="circle"></span>
+  </span>
 </span>
