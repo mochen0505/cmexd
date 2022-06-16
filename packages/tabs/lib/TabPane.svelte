@@ -16,7 +16,7 @@
   $: classes = classNames(
     'tab-item',
     {
-      ['active']: tabOpen,
+      active: tabOpen,
     }
   )
 
@@ -24,7 +24,7 @@
     className,
     'tab-content',
     {
-      ['show']: tabOpen,
+      show: tabOpen,
     }
   )
 

@@ -7,7 +7,7 @@
     import '../repl/style/base.css';
 
     const menu = [
-      'icon', 'button', 'modal', 'drawer', 'tabs'
+      'icon', 'button', 'switch', 'modal', 'drawer', 'tabs'
     ];
 
     let currentComponent;
