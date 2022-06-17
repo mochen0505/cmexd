@@ -23,6 +23,7 @@
   export let disabled = false;
 
   let classes;
+
   $: classes = classNames(
     className,
     {

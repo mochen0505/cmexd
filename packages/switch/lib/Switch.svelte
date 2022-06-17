@@ -15,6 +15,7 @@
   const dispatch = createEventDispatcher();
 
   let classes;
+
   $: classes = classNames(
     className,
     {

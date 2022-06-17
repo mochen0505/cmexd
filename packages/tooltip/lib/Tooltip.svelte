@@ -22,6 +22,7 @@
   let popperInstance;
   let targetEl;
   let tooltipEl;
+  let classes;
 
   $: classes = classNames(
     className,

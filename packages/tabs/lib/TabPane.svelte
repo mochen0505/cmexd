@@ -12,6 +12,7 @@
   const { gutter, activeTabId, setActiveTab } = getContext('tabContent');
 
   let tabOpen = active;
+  let classes;
 
   $: classes = classNames(
     'tab-item',
