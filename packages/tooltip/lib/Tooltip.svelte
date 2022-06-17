@@ -2,7 +2,7 @@
   import { onDestroy, onMount } from 'svelte';
   import {fade} from 'svelte/transition';
   import classNames from "classnames";
-  import { createPopper } from '@popperjs/core/dist/esm/popper';
+  import { createPopper } from '@popperjs/core';
   import Portal from './Portal.svelte';
 
   let className = '';
