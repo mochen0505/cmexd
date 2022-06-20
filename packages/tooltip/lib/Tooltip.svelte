@@ -179,7 +179,7 @@
       bind:this={tooltipEl}
       role="tooltip"
       data-popper-placement={placement}
-      transition:fade={isFade && trigger === 'hover' ? {} : {delay: 0, duration: 0}}
+      in:fade={isFade ? {} : {delay: 0, duration: 0}}
       {...$$restProps}
     >
       <div class="arrow" data-popper-arrow>
