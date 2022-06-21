@@ -16,4 +16,5 @@
 | visible | 显隐 | boolean | false |
 | width | 宽度 | number | 620 |
 | closeByEsc | 按esc关闭modal | boolean | true |
+| container | modal挂载节点 | HTMLElement | document.body |
 | beforeClose | 关闭弹窗之前的回调 | function | () => true |

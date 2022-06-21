@@ -3,12 +3,14 @@
   import { fade, scale } from "svelte/transition";
   import { quintOut } from "svelte/easing";
   import { IconFont } from "@cmexd/icon";
+  import Portal from "./Portal.svelte";
 
   let className = '';
   export {className as class};
   export let visible = false;
   export let width = 620;
   export let closeByEsc = true;
+  export let container = document.body;
   export let beforeClose = () => true;
 
   const dispatch = createEventDispatcher();
@@ -136,22 +138,24 @@
 <svelte:window on:keydown={onKey} on:popstate={onPopstate} />
 
 {#if visible}
-  <div
-    transition:fade={{ duration: 100 }}
-    class="modal-mask"
-  >
+  <svelte:component this={Portal} {container}>
     <div
-      in:scale={{ duration: 100, easing: quintOut }}
-      class={`modal ${className}`}
-      style={`width: ${width}px`}
-      tabindex="-1"
-      bind:this={elm}
-      {...$$restProps}
+      transition:fade={{ duration: 100 }}
+      class="modal-mask"
     >
-      <IconFont class="close-icon" type="icon-close" on:click={handleModalClose}/>
-      <div class="modal-content">
-        <slot />
+      <div
+        in:scale={{ duration: 100, easing: quintOut }}
+        class={`modal ${className}`}
+        style={`width: ${width}px`}
+        tabindex="-1"
+        bind:this={elm}
+        {...$$restProps}
+      >
+        <IconFont class="close-icon" type="icon-close" on:click={handleModalClose}/>
+        <div class="modal-content">
+          <slot />
+        </div>
       </div>
     </div>
-  </div>
+  </svelte:component>
 {/if}
