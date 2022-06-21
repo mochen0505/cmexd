@@ -3,6 +3,7 @@
   import { fade, fly } from "svelte/transition";
   import classNames from "classnames";
   import { IconFont } from "@cmexd/icon";
+  import Portal from "./Portal.svelte";
 
   let className = '';
   export {className as class};
@@ -14,6 +15,7 @@
    */
   export let direction = 'right';
   export let closeByEsc = true;
+  export let container = document.body;
   export let beforeClose = () => true;
 
   const dispatch = createEventDispatcher();
@@ -154,22 +156,24 @@
 <svelte:window on:keydown={onKey} on:popstate={onPopstate} />
 
 {#if visible}
-  <div
-    transition:fade={{ duration: 300 }}
-    class="drawer-mask"
-  >
+  <svelte:component this={Portal} {container}>
     <div
-      transition:fly={{x: direction === 'right' ? width : -width, duration: 500}}
-      class={classes}
-      style={`width: ${width}px`}
-      tabindex="-1"
-      bind:this={elm}
-      {...$$restProps}
+      transition:fade={{ duration: 300 }}
+      class="drawer-mask"
     >
-      <IconFont class="close-icon" type="icon-close" on:click={handleModalClose}/>
-      <div class="drawer-content">
-        <slot />
+      <div
+        transition:fly={{x: direction === 'right' ? width : -width, duration: 500}}
+        class={classes}
+        style={`width: ${width}px`}
+        tabindex="-1"
+        bind:this={elm}
+        {...$$restProps}
+      >
+        <IconFont class="close-icon" type="icon-close" on:click={handleModalClose}/>
+        <div class="drawer-content">
+          <slot />
+        </div>
       </div>
     </div>
-  </div>
+  </svelte:component>
 {/if}

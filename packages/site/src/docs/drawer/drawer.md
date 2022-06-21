@@ -17,4 +17,5 @@
 | width | 宽度 | number | 500 |
 | direction | 弹出方向 | right/left | right |
 | closeByEsc | 按esc关闭drawer | boolean | true |
+| container | modal挂载节点 | HTMLElement | document.body |
 | beforeClose | 关闭抽屉之前的回调 | function | () => true |
