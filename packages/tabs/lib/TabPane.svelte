@@ -13,6 +13,7 @@
 
   let tabOpen = active;
   let classes;
+  let classesContent;
 
   $: classes = classNames(
     'tab-item',
