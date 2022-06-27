@@ -2,7 +2,6 @@
     import { goto } from '$app/navigation';
     import { page } from '$app/stores';
     import logo from '../img/logo.png';
-    import github from '../img/github.png';
     import '../repl/style/code.css';
     import '../repl/style/base.css';
 
@@ -16,10 +15,6 @@
 
     function handleRedirect (comp) {
       goto(`/components/${comp}`)
-    }
-
-    function handleRedirectToGithub() {
-      goto('https://github.com/mochen0505/cmexd')
     }
 
     function handleRedirectToHome() {
@@ -99,7 +94,6 @@
 
 <div class="app-top-bar">
   <img class="logo" src={logo} alt="Logo" on:click={handleRedirectToHome} />
-  <img class="logo" src={github} alt="github" on:click={handleRedirectToGithub}>
 </div>
 
 <div class="content">
