@@ -40,7 +40,7 @@ importers:
 
   packages/button:
     specifiers:
-      '@cmexd/icon': ^1.4.0
+      '@cmexd/icon': ^1.5.0
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
@@ -49,9 +49,22 @@ importers:
     devDependencies:
       typescript: 4.7.3
 
+  packages/carousel:
+    specifiers:
+      '@cmexd/icon': ^1.5.0
+      classnames: ^2.3.1
+      siema: ^1.5.1
+      typescript: ^4.6.3
+    dependencies:
+      '@cmexd/icon': link:../icon
+      classnames: 2.3.1
+      siema: 1.5.1
+    devDependencies:
+      typescript: 4.7.3
+
   packages/drawer:
     specifiers:
-      '@cmexd/icon': ^1.4.0
+      '@cmexd/icon': ^1.5.0
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
@@ -71,7 +84,7 @@ importers:
 
   packages/modal:
     specifiers:
-      '@cmexd/icon': ^1.4.0
+      '@cmexd/icon': ^1.5.0
       classnames: ^2.3.1
       typescript: ^4.6.3
     dependencies:
@@ -89,7 +102,7 @@ importers:
       typescript: ~4.6.2
     devDependencies:
       '@sveltejs/adapter-static': 1.0.0-next.34
-      '@sveltejs/kit': 1.0.0-next.350
+      '@sveltejs/kit': 1.0.0-next.352
       svelte-preprocess: 4.10.6_typescript@4.6.4
       tslib: 2.4.0
       typescript: 4.6.4
@@ -118,7 +131,7 @@ importers:
       yootils: 0.3.1
     devDependencies:
       '@sveltejs/adapter-static': 1.0.0-next.34
-      '@sveltejs/kit': 1.0.0-next.350
+      '@sveltejs/kit': 1.0.0-next.352
       marked: 4.0.16
       svelte-preprocess: 4.10.6_typescript@4.6.4
       svelte-preprocess-markdown: 2.7.3
@@ -2704,14 +2717,14 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.350:
-    resolution: {integrity: sha512-qkZNjp7yIj6t91+wMhmMtGJH0Lb89OaKdVXUDy92CS5/4OHRTKcQPdfOKs4no/upkS3RiFb+rEpOkYqTMcPUXg==}
+  /@sveltejs/kit/1.0.0-next.352:
+    resolution: {integrity: sha512-cYQWGZ2TU1iMsh1cqi44FJm5Aqs3iOkuUOnRpoecthcbmiZaqkD1sPG/uROBIPexXSbfyUfrck/hgr9vdCAmCw==}
     engines: {node: '>=16.7'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.47_vite@2.9.12
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.49_vite@2.9.12
       chokidar: 3.5.3
       sade: 1.8.1
       vite: 2.9.12
@@ -2723,8 +2736,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.47_vite@2.9.12:
-    resolution: {integrity: sha512-J6n8UN51aq/TEZGQ89/EtdXTtca3cRcTJGzi6fi+xK8LkgsHQLCZhRj+PJ+swktRSWTX9IOmQS55SqVg6bz5fA==}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.49_vite@2.9.12:
+    resolution: {integrity: sha512-AKh0Ka8EDgidnxWUs8Hh2iZLZovkETkefO99XxZ4sW4WGJ7VFeBx5kH/NIIGlaNHLcrIvK3CK0HkZwC3Cici0A==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
@@ -7507,6 +7520,10 @@ packages:
       get-intrinsic: 1.1.1
       object-inspect: 1.12.2
     dev: true
+
+  /siema/1.5.1:
+    resolution: {integrity: sha512-BUNFdTSbC9/2gA6r6teBY9B8O/XZOUz8kVyttpsbq4gbHF9PidUDzs6aPtiObhV4KoEuPQdhRvK5hPPi9lgSTg==}
+    dev: false
 
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
