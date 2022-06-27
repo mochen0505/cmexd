@@ -13,6 +13,10 @@ const carousel = `
   .carousel-wrap {
     width: 900px;
   }
+  .content-wrap {
+    display: flex;
+    justify-content: center;
+  }
   .content {
     margin: 0 12px;
     width: 282px;
@@ -30,7 +34,7 @@ const carousel = `
 <div class="carousel-wrap">
   <Carousel autoplay={3000}>
     {#each data as item}
-      <div>
+      <div class="content-wrap">
         <div class="content">
           {item}
         </div>
