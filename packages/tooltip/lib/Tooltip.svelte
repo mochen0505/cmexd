@@ -9,6 +9,7 @@
   export { className as class };
   export let target = '';
   export let placement = 'bottom';
+  export let zIndex;
   /**
    * Trigger type
    * @type {"hover" | "click"}
@@ -172,14 +173,14 @@
 </style>
 
 {#if click || hover}
-  <svelte:component this={Portal}>
+  <svelte:component this={Portal} zIndex={zIndex}>
     <div
-
       class={classes}
       bind:this={tooltipEl}
       role="tooltip"
       data-popper-placement={placement}
       in:fade={isFade ? {} : {delay: 0, duration: 0}}
+      style="z-index: {zIndex}"
       {...$$restProps}
     >
       <div class="arrow" data-popper-arrow>

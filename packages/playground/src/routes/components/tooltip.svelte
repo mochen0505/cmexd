@@ -9,6 +9,6 @@
 </Tooltip>
 
 <Button id="test1">click</Button>
-<Tooltip target="test1" placement="right" trigger="click">
+<Tooltip target="test1" placement="right" trigger="click" zIndex={100}>
   <div>click to show the tooltip</div>
 </Tooltip>
