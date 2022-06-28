@@ -29,7 +29,8 @@
     {
       [`${type}`]: type && mode !== 'night',
       [`${type}-${mode}`]: mode === 'night',
-      [`${size}`]: size,
+      [`${size}`]: size && type !== 'text',
+      [`${size}-text`]:  size && type === 'text',
       loading: loading && !disabled,
     }
   )
@@ -40,6 +41,7 @@
   button {
     border: 1px solid;
     border-radius: 8px;
+    padding: 0;
     cursor: pointer;
     text-align: center;
     outline: none;
@@ -181,6 +183,24 @@
     background: #e9ecef;
     color: #9fa3ab;
     pointer-events: none;
+  }
+
+  .large-text {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .medium-text {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .small-text {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .large {
