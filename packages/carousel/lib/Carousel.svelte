@@ -2,10 +2,6 @@
   import Siema from 'siema'
   import { onMount, createEventDispatcher } from 'svelte'
 
-  /**
-   * Docs
-   * https://github.com/pawelgrzybek/siema
-   */
   export let perPage = 3
   export let perMove = 3
   export let loop = true
