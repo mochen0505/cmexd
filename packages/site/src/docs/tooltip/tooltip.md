@@ -16,3 +16,4 @@
 | trigger | 触发方式 | hover/click | hover |
 | isFade | 动画效果 | boolean | true |
 | offset | 偏移量 | [number, number] | [0, 8] |
+| zIndex | 高度 | number | - |
