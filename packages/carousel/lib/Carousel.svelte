@@ -114,11 +114,15 @@
 
   button {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 48px;
+    height: 48px;
     top: 50%;
     z-index: 50;
-    margin-top: -20px;
+    margin-top: -24px;
     border: none;
     background-color: transparent;
   }
@@ -127,11 +131,11 @@
   }
 
   .left {
-    left: -40px;
+    left: -48px;
   }
 
   .right {
-    right: -40px;
+    right: -48px;
   }
   ul {
     list-style-type: none;

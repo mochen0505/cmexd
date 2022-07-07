@@ -25,8 +25,8 @@
     background-color: #fff;
   }
   .carousel-wrap :global(.icon) {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
   }
 </style>
 
