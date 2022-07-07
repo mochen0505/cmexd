@@ -2,8 +2,7 @@
   "version": "independent",
   "command": {
     "version": {
-      "allowBranch": "main",
-      "ignore": ["**/package.json"]
+      "allowBranch": "main"
     }
   }
 }
