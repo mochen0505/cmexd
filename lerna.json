@@ -1,3 +1,9 @@
 {
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "version": {
+      "allowBranch": "master",
+      "ignore": ["./packages/**/*.json"]
+    }
+  }
 }
