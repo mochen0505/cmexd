@@ -15,9 +15,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "classnames": "^2.3.1"
