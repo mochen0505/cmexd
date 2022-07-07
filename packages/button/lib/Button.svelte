@@ -42,9 +42,9 @@
     border: 1px solid;
     border-radius: 8px;
     padding: 0;
-    cursor: pointer;
     text-align: center;
     outline: none;
+    cursor: pointer;
   }
 
   .loading {
@@ -204,27 +204,27 @@
   }
 
   .large {
+    padding: 0 24px;
     min-width: 120px;
     height: 48px;
-    padding: 0 24px;
     line-height: 24px;
     font-size: 16px;
     font-weight: 500;
   }
 
   .medium {
+    padding: 0 20px;
     min-width: 80px;
     height: 40px;
-    padding: 0 20px;
     line-height: 20px;
     font-size: 14px;
     font-weight: 500;
   }
 
   .small {
+    padding: 0 16px;
     min-width: 70px;
     height: 34px;
-    padding: 0 16px;
     line-height: 20px;
     font-size: 14px;
     font-weight: 500;
