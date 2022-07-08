@@ -17,6 +17,7 @@
   export let trigger = 'hover';
   export let isFade = true;
   export let offset = [0, 8];
+  export let padding = 0;
 
   let hover = false;
   let click = false;
@@ -43,7 +44,7 @@
             name: 'preventOverflow',
             options: {
               altAxis: true,
-              padding: 15,
+              padding: padding,
             },
           }
         ]
