@@ -39,6 +39,13 @@
             name: 'offset',
             options: {offset},
           },
+          {
+            name: 'preventOverflow',
+            options: {
+              altAxis: true,
+              padding: 15,
+            },
+          }
         ]
       });
     } else if (popperInstance) {
